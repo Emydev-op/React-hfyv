@@ -4,20 +4,18 @@ import GalleryList from "../components/GalleryList";
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
-  // const [projects, setProjects] = useState([]);
-  // useEffect(() => {
-  //   setProjects(GalleryList);
-  // }, []);
-  // useEffect(() => {
-  //   setProjects([]);
-  //   const filtered = GalleryList.map((p) => ({
-  //     ...p,
-  //     filtered: p.category.includes(filter),
-  //   }));
-  //   setProjects(filtered);
-  //   console.log(projects);
-  // }, [filter,projects]);
-  
+  const [gallery, setGallery] = useState([]);
+  useEffect(() => {
+    setGallery(GalleryList);
+  }, []);
+  useEffect(() => {
+    setGallery([]);
+    const filtered = GalleryList.map((p) => ({
+      ...p,
+      filtered: p.category.includes(filter),
+    }));
+    setGallery(filtered);
+  }, [filter]);
 
   return (
     <div>
@@ -56,10 +54,10 @@ const Gallery = () => {
             Interior
           </button>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w- ">
-          {projects.map((item) =>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {gallery.map((item) =>
             item.filtered === true ? (
-              <div key={item.name}>
+              <div key={item.id}>
                 <img
                   className="h-auto max-w-full rounded-lg"
                   src={item.image}

@@ -17,42 +17,42 @@ import ext6 from "../assets/gallery/exterior/HFYV2.jpg";
 const GalleryList = [
   {
     id: 1,
-    image: { int1 },
+    image: int1,
     category: ["all", "interior"],
   },
   {
     id: 2,
-    image: { int2 },
+    image: int2,
     category: ["all", "interior"],
   },
   {
     id: 3,
-    image: { int3 },
+    image: int3,
     category: ["all", "interior"],
   },
   {
     id: 4,
-    image: { int4 },
+    image: int4,
     category: ["all", "interior"],
   },
   {
     id: 5,
-    image: { ext1 },
+    image: ext1,
     category: ["all", "exterior"],
   },
   {
     id: 6,
-    image: { ext2 },
+    image: ext2,
     category: ["all", "exterior"],
   },
   {
     id: 7,
-    image: { ext3 },
+    image: ext3,
     category: ["all", "exterior"],
   },
   {
     id: 8,
-    image: { ext4 },
+    image: ext4,
     category: ["all", "exterior"],
   },
 ];
