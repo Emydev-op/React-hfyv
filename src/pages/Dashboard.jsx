@@ -92,7 +92,7 @@ const Dashboard = () => {
       </section>
       {/* --------------Testimonial End----------------- */}
       {/* ---------------Contact section------------- */}
-      <section className="bg-gray-200 dark:bg-gray-800">
+      <section className="bg-gray-100 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
             <h2 className="md:text-5xl text-3xl font-bold text-[#BF4E03] ">

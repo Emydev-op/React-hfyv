@@ -30,7 +30,7 @@ const Gallery = () => {
         </div>
       </div>
 
-      <section className="mt-4">
+      <section className="my-4 container">
         <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
           <button
             type="button"
@@ -54,7 +54,7 @@ const Gallery = () => {
             Interior
           </button>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 px-12 md:px-20 mb-10">
           {gallery.map((item) =>
             item.filtered === true ? (
               <div key={item.id}>
