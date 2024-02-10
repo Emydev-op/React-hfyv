@@ -18,7 +18,7 @@ const Dashboard = () => {
         <Carousel
           autoPlay={true}
           infiniteLoop={true}
-          showArrows={false}
+          showArrows={true}
           showStatus={false}
           showIndicators={false}
         >
@@ -37,19 +37,19 @@ const Dashboard = () => {
               </svg>
               <blockquote>
                 <p className="text-2xl font-medium text-gray-900 dark:text-white">
-                  &ldquo;Flowbite is just awesome. It contains tons of
-                  predesigned components and pages starting from login screen to
-                  complex dashboard. Perfect choice for your next SaaS
-                  application.&ldquo;
+                  &ldquo;I am grateful and elated I reside in Holy Family Youth
+                  Village throughout my academic years. I have no ounce of
+                  regret whatsoever. HFYV is undoubtably the best University
+                  hostel in Nigeria.&ldquo;
                 </p>
               </blockquote>
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                    Micheal Gough
+                    Oragwuncha Feechukwu
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                    CEO at Google
+                    Alumini
                   </div>
                 </div>
               </figcaption>
@@ -70,19 +70,52 @@ const Dashboard = () => {
               </svg>
               <blockquote>
                 <p className="text-2xl font-medium text-gray-900 dark:text-white">
-                  &ldquo;Flowbite is just awesome. It contains tons of
-                  predesigned components and pages starting from login screen to
-                  complex dashboard. Perfect choice for your next SaaS
-                  application.&ldquo;
+                  &ldquo;I just love Holy Family for everything; the enduring
+                  and understanding management lead by Fr. Dom, the surroundings
+                  for pictures, the security is superb. Holy Family is just the
+                  best!&ldquo;
                 </p>
               </blockquote>
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                    Micheal Gough
+                    Anunandu Chisom Sylvia
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                    CEO at Google
+                    Alumini
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
+              <svg
+                className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                viewBox="0 0 24 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <blockquote>
+                <p className="text-2xl font-medium text-gray-900 dark:text-white">
+                  &ldquo;Whenever I think of The Holy Family Youth Village, I
+                  think of a home. Being in Holy Family , I learnt how to be
+                  more cultured, more calculative and principled. Holy Family
+                  taught me to be a better version of my self.&ldquo;
+                </p>
+              </blockquote>
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                    Anthony Eboh
+                  </div>
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                    Alumini
                   </div>
                 </div>
               </figcaption>
@@ -90,7 +123,6 @@ const Dashboard = () => {
           </div>
         </Carousel>
       </section>
-      {/* --------------Testimonial End----------------- */}
       {/* ---------------Contact section------------- */}
       <section className="bg-gray-100 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">

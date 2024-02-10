@@ -1,6 +1,8 @@
-import hflogo from "../assets/hflogo.png";
+import hflogo from "../../assets/hflogo.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+//Popup booking
+import Booking from "../Popup/Booking";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -8,8 +10,9 @@ const Navbar = () => {
     <nav className="shadow-md w-full fixed top-0 left-0 z-40 backdrop-blur bg-white border-gray-200 dark:bg-gray-900 ">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <NavLink
+          onClick={() => setOpen(false)}
           to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className="flex items-center space-x-3 rtl:space-x-reverse max-w-[8rem]"
         >
           <img src={hflogo} className="h-8" alt="Flowbite Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-black dark:text-white">
@@ -18,14 +21,14 @@ const Navbar = () => {
         </NavLink>
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-4 cursor-pointer md:hidden"
         >
           {open ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="dark:text-white w-6 h-6"
+              className="dark:text-white text-gray-800 m-2 w-6 h-6"
             >
               <path
                 fillRule="evenodd"
@@ -38,7 +41,7 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="dark:text-white w-6 h-6"
+              className="dark:text-white text-gray-800 m-2 w-6 h-6"
             >
               <path
                 fillRule="evenodd"
@@ -56,15 +59,17 @@ const Navbar = () => {
           }`}
         >
           <li className="md:ml-8 text-xl md:my-0 my-7">
-            <NavLink
-              to="/"
-              className=" dark:text-white text-gray-800 hover:text-gray-400 duration-500"
-            >
-              How To Book
-            </NavLink>
+            <Booking
+              trigger={
+                <span className=" dark:text-white text-gray-800 hover:text-gray-400 duration-500">
+                  How To Book
+                </span>
+              }
+            />
           </li>
           <li className="md:ml-8 text-xl md:my-0 my-7">
             <NavLink
+              onClick={() => setOpen(false)}
               to="/gallery"
               className="text-gray-800 dark:text-white  hover:text-gray-400 duration-500"
             >
@@ -73,6 +78,7 @@ const Navbar = () => {
           </li>
           <li className="md:ml-8 text-xl md:my-0 my-7">
             <NavLink
+              onClick={() => setOpen(false)}
               to="/faq"
               className="dark:text-white text-gray-800 hover:text-gray-400 duration-500"
             >
@@ -81,6 +87,7 @@ const Navbar = () => {
           </li>
           <li className="md:ml-8 text-xl md:my-0 my-7">
             <NavLink
+              onClick={() => setOpen(false)}
               to="/about"
               className="dark:text-white text-gray-800 hover:text-gray-400 duration-500"
             >

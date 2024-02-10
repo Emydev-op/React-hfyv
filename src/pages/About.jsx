@@ -6,7 +6,7 @@ import frdom from "../assets/frDom.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-800">
       <div className="bg-gradient-to-tl from-slate-700 to-slate-900 h-96 w-full relative flex  items-center justify-center ">
         <img
           src={hfyv3}
@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <section>
         {/* Mission, Vision, About */}
-        <main className="flex items-center bg-stone-50 xl:h-screen font-poppins dark:bg-gray-800 ">
+        <main className="flex items-center bg-stone-50 my-12 font-poppins dark:bg-gray-800">
           <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <div className="flex flex-wrap items-center ">
               <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
@@ -115,7 +115,7 @@ const About = () => {
           </div>
         </main>
         {/* Capacity, Features */}
-        <main className="flex items-center bg-stone-50 xl:h-screen font-poppins dark:bg-gray-800 ">
+        <main className="flex items-center bg-stone-50 my-12 font-poppins dark:bg-gray-800">
           <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <div className="flex flex-wrap items-center ">
               <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
@@ -179,11 +179,11 @@ const About = () => {
                 profession="The Bursar"
                 imageSrc="https://i.ibb.co/8P6cvVy/image-01-1.jpg"
               />
-                <TeamCard
-                  name="Coriss Ambady"
-                  profession="The Bursar"
-                  imageSrc="https://i.ibb.co/yVVT0Dp/image-02-2.jpg"
-                />
+              <TeamCard
+                name="Coriss Ambady"
+                profession="The Bursar"
+                imageSrc="https://i.ibb.co/yVVT0Dp/image-02-2.jpg"
+              />
               <TeamCard
                 name="Sis. M. Sarah Edeoga"
                 profession="The Chief Receptionist"

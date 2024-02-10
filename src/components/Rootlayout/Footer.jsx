@@ -1,4 +1,4 @@
-import hflogo from "../assets/hflogo.png";
+import hflogo from "../../assets/hflogo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
