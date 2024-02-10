@@ -7,7 +7,7 @@ import Booking from "../Popup/Booking";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="shadow-md w-full fixed top-0 left-0 z-40 backdrop-blur bg-white border-gray-200 dark:bg-gray-900 ">
+    <nav className="shadow-md w-full fixed top-0 left-0 z-40 backdrop-blur bg-white border-gray-200 dark:bg-gray-900">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <NavLink
           onClick={() => setOpen(false)}

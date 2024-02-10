@@ -9,12 +9,12 @@ export default function Booking({ trigger }) {
       modal
     >
       {(close) => (
-        <div className="relative w-full max-w-2xl max-h-full">
-          <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div className="relative md:w-full w-[90%] mx-auto max-w-lg max-h-full">
+          <div className="relative bg-white rounded-lg shadow dark:bg-gray-900">
             {/* <!-- Modal header --> */}
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Static modal
+                How to Book
               </h3>
               <button
                 onClick={close}
@@ -40,18 +40,22 @@ export default function Booking({ trigger }) {
             </div>
             {/* <!-- Modal body --> */}
             <div className="p-4 md:p-5 space-y-4">
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                With less than a month to go before the European Union enacts
-                new consumer privacy laws for its citizens, companies around the
-                world are updating their terms of service agreements to comply.
-              </p>
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                The European Union’s General Data Protection Regulation
-                (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
-                common set of data rights in the European Union. It requires
-                organizations to notify users as soon as possible of high-risk
-                data breaches that could personally affect them.
-              </p>
+              <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                <li>Purchase the form at the hostel reception</li>
+                <li>
+                  Perform the various test listed on the form at a catholic
+                  hospital (Tuberculosis, HIV and Hepatitis B)
+                </li>
+                <li>
+                  Get a letter of recommendation from your Parish Priest or
+                  Pastor
+                </li>
+                <li>Make Payment at the listed banks on the form</li>
+                <li>Sign the Student Rules and Regulations</li>
+                <li>
+                  Submit the filled form with payment receipt at the reception
+                </li>
+              </ul>
             </div>
             {/* <!-- Modal footer --> */}
             <div className="flex justify-end items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600 sr-only">
