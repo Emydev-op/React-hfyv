@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -17,16 +18,20 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "gallery",
+        path: "/gallery",
         element: <Gallery />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
       {
-        path: "faq",
+        path: "/faq",
         element: <Faq />,
+      },
+      {
+        path: "/login",
+        element: <Login/>,
       },
     ],
   },

@@ -94,9 +94,13 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
-          <button className="bg-[#BF4E03] text-white font-sans font-bold py-2 px-6 rounded-full md:ml-8 hover:bg-indigo-400 duration-500">
+          <NavLink
+            to="/login"
+            onClick={() => setOpen(false)}
+            className="bg-[#BF4E03] text-white font-sans font-bold py-2 px-6 rounded-full md:ml-8 hover:bg-[#bf3f03] duration-500"
+          >
             Login
-          </button>
+          </NavLink>
         </ul>
       </div>
     </nav>

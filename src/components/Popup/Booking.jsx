@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Popup from "reactjs-popup";
 
 export default function Booking({ trigger }) {
