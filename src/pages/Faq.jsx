@@ -41,7 +41,7 @@ const Faq = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-tl from-slate-700 to-slate-900 h-96 w-full relative flex  items-center justify-center ">
+      <div className="bg-gradient-to-tl from-[#4a4336] to-slate-900 h-96 w-full relative flex  items-center justify-center ">
         <img
           src={hfyv3}
           alt=""
@@ -75,21 +75,26 @@ const Faq = () => {
                     {" "}
                     {data.title}{" "}
                   </span>
-
-                  <svg
-                    className="w-6 h-6 text-gray-400 rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  <span
+                    className={`${
+                      data.display !== false && "rotate-180"
+                    } ease-linear transition-all`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                    <svg
+                      className="w-6 h-6 text-gray-400 rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </span>
                 </button>
 
                 <div

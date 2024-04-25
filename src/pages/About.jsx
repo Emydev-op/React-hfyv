@@ -7,7 +7,7 @@ import frdom from "../assets/frDom.jpg";
 const About = () => {
   return (
     <div className="dark:bg-gray-800">
-      <div className="bg-gradient-to-tl from-slate-700 to-slate-900 h-96 w-full relative flex  items-center justify-center ">
+      <div className="bg-gradient-to-tl from-[#4a4336] to-slate-900 h-96 w-full relative flex  items-center justify-center ">
         <img
           src={hfyv3}
           alt=""
@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <section>
         {/* Mission, Vision, About */}
-        <main className="flex items-center bg-stone-50 my-12 font-poppins dark:bg-gray-800">
+        <main className="flex items-center my-12 font-poppins dark:bg-gray-800">
           <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <div className="flex flex-wrap items-center ">
               <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
@@ -115,7 +115,7 @@ const About = () => {
           </div>
         </main>
         {/* Capacity, Features */}
-        <main className="flex items-center bg-stone-50 my-12 font-poppins dark:bg-gray-800">
+        <main className="flex items-center bg-gray-100 my-12 font-poppins dark:bg-gray-800">
           <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <div className="flex flex-wrap items-center ">
               <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
@@ -168,7 +168,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mx-auto flex flex-wrap justify-center max-w-[90%]">
+            <div className="mx-auto flex flex-wrap justify-center max-w-[90%] gap-2">
               <TeamCard
                 name="Fr. Obielosi Dominic"
                 profession="The Rector"
@@ -177,17 +177,17 @@ const About = () => {
               <TeamCard
                 name="Fr. Ogbuowelu Emmanuel"
                 profession="The Bursar"
-                imageSrc="https://i.ibb.co/8P6cvVy/image-01-1.jpg"
+                imageSrc={frdom}
               />
               <TeamCard
                 name="Coriss Ambady"
                 profession="The Bursar"
-                imageSrc="https://i.ibb.co/yVVT0Dp/image-02-2.jpg"
+                imageSrc={frdom}
               />
               <TeamCard
                 name="Sis. M. Sarah Edeoga"
                 profession="The Chief Receptionist"
-                imageSrc="https://i.ibb.co/30tGtjP/image-04.jpg"
+                imageSrc={frdom}
               />
             </div>
           </div>

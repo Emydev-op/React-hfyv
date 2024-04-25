@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
   return (
     <div>
-      <div className="bg-gradient-to-tl from-slate-700 to-slate-900 md:h-screen h-[50vh] w-full relative flex  items-center justify-center ">
+      <div className="bg-gradient-to-tl from-[#4a4336] to-slate-900 md:h-screen h-[50vh] w-full relative flex  items-center justify-center ">
         <img
           src={hfimg}
           alt=""
