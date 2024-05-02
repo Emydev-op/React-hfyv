@@ -7,7 +7,7 @@ import Booking from "../Popup/Booking";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="shadow-md w-full fixed top-0 left-0 z-40 backdrop-blur bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="shadow-md w-full fixed top-0 left-0 z-40 backdrop-blur bg-white border-gray-200 dark:bg-[#181612]">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <NavLink
           onClick={() => setOpen(false)}
@@ -52,7 +52,7 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white dark:bg-gray-900 font-normal md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white dark:bg-[#181612] font-normal md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open
               ? "top-20 opacity-100"
               : "top-[-490px] opacity-0 md:opacity-100"
